@@ -1,0 +1,320 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.8rem;
+	font-family: 'Arvo', sans-serif;
+	scroll-behavior: smooth;
+	color: #d9d6d0;
+
+	overflow-x: hidden;
+}
+
+[id] {
+	scroll-margin-top: 100px;
+}
+
+.hero-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: -1;
+}
+
+.section-title {
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+.navbar {
+	background-color: #484c4e;
+	
+}
+
+.navbar-nav {
+	font-size: 17px;
+	padding: 0 4px;
+	cursor: pointer;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+	transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link.active:hover {
+	color: #f3df0a;
+}
+
+.home {
+	position: relative;
+	background-image: url(../img/shutters-669296_1920.jpg);
+	height: 700px;
+	opacity: 0.9;
+	font-weight: bolder;
+	z-index: 0;
+}
+
+.home-head {
+	font-size: 60px;
+	font-weight: bolder;
+	letter-spacing: 2px;
+}
+
+.home-bottom {
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+
+.btn {
+	font-size: 40px;
+	text-transform: uppercase;
+	padding: 20px 50px;
+	color: rgb(202, 176, 28);
+}
+
+.aboutus {
+	position: relative;
+	background-color: #072e4b;
+	color: white;
+	box-shadow: 40px;
+	z-index: 0;
+}
+
+.aboutus-head {
+	color: #cdff16;
+	
+}
+
+.text-hero {
+	padding: 20px 30px;
+}
+
+.fa-ab {
+	font-size: 100px;
+	color: #0fbfff;
+	padding: 20px;
+}
+
+.services {
+	background-image: url(../img/wooden-floor-1853409_1920.jpg);
+}
+
+.services-pass {
+	background-color: #2b3437;
+	padding: 20px;
+}
+
+
+
+.boxes {
+	position: relative;
+	background-size: cover;
+	height: 350px;
+	margin:6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: text-transform 0.5s;
+	z-index: 0;
+}
+
+.boxes:hover {
+	text-transform: uppercase;
+}
+
+.offers h1{
+	font-size: 20px;
+}
+
+.one {
+	background-image: url(../img/img-specjalizacja/four-saloon.jpg);
+}
+.two {
+	background-image: url(../img/img-specjalizacja/two\ -\ sleep.jpg);
+	background-position: 0 65%;
+}
+
+.three {
+	background-image: url(../img/img-specjalizacja/one-kitchen.jpg);
+}
+
+.four {
+	background-image: url(../img/img-specjalizacja/three-\ badrom.jpg);
+}
+
+.list-group {
+	opacity: 0.7;
+	font-size: 23px;
+}
+
+.list-group-item {
+	background-color: none;
+	color: rgb(22, 21, 21);
+	border: 1px solid rgb(15, 14, 14);
+}
+
+.gallery {
+	background-image: url(../img/wooden-floor-1853409_1920.jpg);
+	position: relative;
+	z-index: 0;
+}
+
+
+
+.images {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+
+.images img {
+	width: 500px;
+	height: 500px;
+	border-radius: 20px;
+	border: 1px solid rgb(213, 202, 202);
+	margin: 20px;
+	transition: transform 0.3s;
+}
+
+
+.images img:hover {
+	transform: scale(1.4);
+	overflow: hidden;
+}
+
+.contact {
+	background-color: #23282d;
+}
+
+.contact-info p {
+	background-color: #3c3425;
+	border-radius: 20px;
+	padding: 0 20px;
+}
+.contact-mail {
+	font-size: 22px;
+}
+
+.frame-src {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer {
+	background-color: #11202e;
+	height: 120px;
+	color: white;
+	
+}
+
+.footer p {
+	font-size: 20px;
+	
+}
+
+
+
+
+
+@media (max-width: 576px) {
+	.images {
+		display: flex;
+		flex-wrap: wrap-reverse;
+	}
+
+	.images img {
+		width: 300px;
+		height: 450px;
+	}
+
+	.text-hero {
+		font-size: 20px;
+	}
+}
+
+
+@media (min-width: 415px) {
+	.contact-mail {
+		font-size: 20px;
+	}
+}
+
+@media(min-width:768px) {
+	.images img {
+		width: 340px;
+		height: 340px;
+	}
+
+	
+
+	.home-bottom {
+		font-size: 34px;
+	}
+
+	.btn {
+		padding: 20px;
+		font-size: 20px;;
+	}
+	
+
+}
+
+@media (min-width:0px)and (max-width:576px) {
+	.images img {
+		width: 240px;
+		height: 240px;
+	}
+	
+}
+
+@media (min-width:576px) {
+	.aboutus, .text-hero {
+		font-size: 22px;
+		padding:20px;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+	.home {
+		background-image: url(../img/shutters-669296_640.jpg);
+		height: 500px;
+		background-size: cover;
+	}
+
+	.home-head {
+		font-size: 40px;
+	}
+	.home-bottom {
+		font-size: 20px;
+	}
+
+	.btn {
+		font-size: 20px;
+		padding: 10px;
+	}
+
+	.images img {
+		width: 400px;
+		height: 400px;
+		}
+
+		
+}
+
+
+@media(min-width:0px) and (max-width:336px) {
+	.contact-mail {
+		font-size: 14px;
+	}
+}
